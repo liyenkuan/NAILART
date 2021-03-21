@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Microsoft JhengHei";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.content{
+    justify-content: space-evenly;
+    background-color: 	#DDDDDD;
+}
+.narb {
+   background-color:	#444444;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+   /* border-bottom: 3px solid#000000 */
+   ;
+   /* border: 10px solid deepskyblue;*/
+}
+.narb img{
+    margin-left: 100px;
+    width: 400px;
+}
+
+.narlist{
+    width: 50%;
+    /* border: 3px solid  #FFFFFF ; */
+}
+.listate{
+    justify-content: space-around; 
+    font-size: 30px;
+    display: flex;
+    color: 	#888888;
+}
+.listate li a{
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    border-bottom: 3px solid  #444444;
+    padding: 10px;
+    color: 	#FFFFFF;
+}
+.listate li p{
+    font-size: 20px;
+}
+.listate li a:hover{
+    border-bottom: 3px solid  #FFFFFF;
+    color :#FFFFFF;
+}
+.imgslider{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+.ticketCard {
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 6px 
+    #00000029;
+        box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 5px;
+    margin: 10px;
+    list-style:none;
+    display: flex;
+  }
+.ticketCard-img {
+    position: relative;
+    
+  }
+  .ticketCard-img a {
+    display: block;
+    overflow: hidden;
+  }
+.ticketCard-img img {
+    width: 60%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .ticketCard-img img:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  .ticketCard-region, .ticketCard-rank {
+    position: absolute;
+    border-radius: 0 5px 5px 0px;
+    color: #FFF;
+    text-align: center;
+  }
+  .ticketCard-region {
+    top: -13px;
+    left: 0;
+    font-size: 1.25rem;
+    background-color: #64C3BF;
+    padding: 12px 20px;
+  }
+  
+  .ticketCard-rank {
+    bottom: 0px;
+    left: 0;
+    background-color: #00807E;
+    padding: 5px 8px;
+    min-width: 40px;
+  }
+  .ticketCard-content{
+      font-size: 40px;
+      text-align: center;
+  }
