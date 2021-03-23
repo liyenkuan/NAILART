@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: "Microsoft JhengHei";
-    background-color: #FFFFFF;
 }
 ol, ul {
 	list-style: none;
@@ -50,47 +49,113 @@ table {
 }
 .content{
     justify-content: space-evenly;
+    background-color: 	#9198e5;
 }
 .narb {
-    background-color: white;
-  
+    background: linear-gradient(#e66465 40%, #9198e5);
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+
+   /* border-bottom: 3px solid#000000 */
+   ;
    /* border: 10px solid deepskyblue;*/
 }
 .narb img{
-    margin-left: 150px;
-    width: 20%;
-   
+    margin-left: 100px;
+    width: 400px;
 }
+
 .narlist{
-    width: 30%;
+    width: 50%;
+    /* border: 3px solid  #FFFFFF ; */
 }
 .listate{
     justify-content: space-around; 
     font-size: 30px;
     display: flex;
+    color: 	#888888;
 }
 .listate li a{
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 500;
     display: block;
-    border-bottom: 3px solid  #FFFFFF;
+    border-bottom: 3px solid  #ffffff00;
     padding: 10px;
+    color: 	#FFFFFF;
 }
 .listate li p{
     font-size: 20px;
 }
 .listate li a:hover{
-    border-bottom: 3px solid  deepskyblue;
-    color :deepskyblue;
+    border-bottom: 3px solid  #FFFFFF;
+    color :#FFFFFF;
 }
 .imgslider{
-    display:flex;
-    /* border: 10px solid deepskyblue; */
-    justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 100pX;
+    
+}
+.ticketCard {
+    width: 30%;
+    height: 200px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 6px 
+    #00000029;
+        box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px ;
+    list-style:none;
+    display: flex;
+    margin: 0 auto;
     margin: 20px;
+    
+  }
+.ticketCard-img {
+    
+    width: 50%;
+  }
+  .ticketCard-img a {
+    display: block;
+    overflow: hidden;
    
-}
-.imgslider img {
-    width: 48%;
-    height: 400px;
-}
+  }
+.ticketCard-img img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+       border-radius:  10% 0% 0% 10%;
+  }
+  /* .ticketCard-img img:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  } */
+  /* .ticketCard-region, .ticketCard-rank {
+    position: absolute;
+    border-radius: 0 5px 5px 0px;
+    color: #FFF;
+    text-align: center;
+  }
+  .ticketCard-region {
+    top: -13px;
+    left: 0;
+    font-size: 1.25rem;
+    background-color: #64C3BF;
+    padding: 12px 20px;
+  } */
+
+  .ticketCard-rank {
+    bottom: 0px;
+    left: 0;
+    background-color: #00807E;
+    padding: 5px 8px;
+    min-width: 40px;
+  }
+  .ticketCard-content{
+      font-size: 40px;
+      text-align: center;
+  } 
