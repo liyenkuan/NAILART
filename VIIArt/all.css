@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: "Microsoft JhengHei";
 }
 ol, ul {
 	list-style: none;
@@ -47,115 +47,63 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.content{
-    justify-content: space-evenly;
-    background-color: 	#9198e5;
-}
-.narb {
-    background: linear-gradient(#e66465 40%, #9198e5);
-   position: -webkit-sticky;
-   position: sticky;
-   top: 0px;
+/* REST end */
+.navContainer{
+  background-color: white;
+  /* border: 1px solid #000; */
 
-   /* border-bottom: 3px solid#000000 */
-   ;
-   /* border: 10px solid deepskyblue;*/
 }
-.narb img{
-    margin-left: 100px;
-    width: 400px;
+.navColor{
+  border-bottom: 3px solid #DDDDDD ;
+  background-color: #DDDDDD;
 }
+.nav_one{
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+}
+.nav_one a{
+  font-size: 40px;
+}
+.nav_ul{
+  max-width: 800px;
+  font-size: 20px;
+  font-family: 'Krona One', sans-serif;
+}
+.nav_ul li{
+  border-bottom: 3px solid #ffffff00 ;
+  padding: 15px;
+}
+.nav_ul li:hover{
+  border-bottom: 3px solid #000 ;
+  font-weight: bold;
+}
+.banner_container{
+  padding-top: 85px;
 
-.narlist{
-    width: 50%;
-    /* border: 3px solid  #FFFFFF ; */
 }
-.listate{
-    justify-content: space-around; 
-    font-size: 30px;
-    display: flex;
-    color: 	#888888;
+.banner{
+  /* display: flex; */
+  background-attachment: fixed;
+  background-image: url("https://i.imgur.com/yOP49Bd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 700px;
+  text-align: center;
+  line-height: 700px;  
+  font-size: 80px;
+  color: white;
 }
-.listate li a{
-    text-decoration: none;
-    font-weight: 500;
-    display: block;
-    border-bottom: 3px solid  #ffffff00;
-    padding: 10px;
-    color: 	#FFFFFF;
-}
-.listate li p{
-    font-size: 20px;
-}
-.listate li a:hover{
-    border-bottom: 3px solid  #FFFFFF;
-    color :#FFFFFF;
-}
-.imgslider{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-left: 100pX;
-    
-}
-.ticketCard {
-    width: 30%;
-    height: 200px;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 3px 6px 
-    #00000029;
-        box-shadow: 0px 3px 6px #00000029;
-    border-radius: 30px ;
-    list-style:none;
-    display: flex;
-    margin: 0 auto;
-    margin: 20px;
-    
+@media (max-width: 375px) { 
+  .nav_one{
+    text-align: start;
   }
-.ticketCard-img {
-    
-    width: 50%;
-  }
-  .ticketCard-img a {
-    display: block;
-    overflow: hidden;
-   
-  }
-.ticketCard-img img {
-    width: 100%;
-    height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
-       border-radius:  10% 0% 0% 10%;
-  }
-  /* .ticketCard-img img:hover {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  } */
-  /* .ticketCard-region, .ticketCard-rank {
-    position: absolute;
-    border-radius: 0 5px 5px 0px;
-    color: #FFF;
+  .nav_ul{
     text-align: center;
   }
-  .ticketCard-region {
-    top: -13px;
-    left: 0;
-    font-size: 1.25rem;
-    background-color: #64C3BF;
-    padding: 12px 20px;
-  } */
-
-  .ticketCard-rank {
-    bottom: 0px;
-    left: 0;
-    background-color: #00807E;
-    padding: 5px 8px;
-    min-width: 40px;
+  .nav_one{
+    justify-content: space-between;
   }
-  .ticketCard-content{
-      font-size: 40px;
-      text-align: center;
-  } 
+ }
